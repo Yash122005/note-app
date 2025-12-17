@@ -31,15 +31,16 @@ const App = () => {
   }
 
   return (
-    <div className='min-h-screen lg:flex text-white relative overflow-hidden'
-      style={{
+    <div className='flex flex-col'
+    style={{
         background: 'linear-gradient(135deg, #0f0c29, #302b63, #24243e)',
         boxShadow: 'inset 0 0 100px rgba(100, 200, 255, 0.1)'
       }}>
+    <div className='min-h-screen lg:flex text-white relative overflow-hidden'>
       
       {/* Decorative light effects */}
-      <div className='absolute top-10 left-10 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse'></div>
-      <div className='absolute bottom-10 right-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse'></div>
+      {/* <div className='absolute top-10 left-10 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse'></div>
+      <div className='absolute bottom-10 right-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse'></div> */}
 
       <form onSubmit={(e) => {
         submitHandler(e)
@@ -91,7 +92,8 @@ const App = () => {
           })}
         </div>
       </div>
-      <Footer />
+    </div>
+    <Footer />
     </div>
   )
 }
